@@ -560,6 +560,10 @@ div.frame{
   width: 421px;
   font-family: "Futura-Medium", Helvetica;
   font-weight: 500;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
 }
 
 .final .rectangle-6 {
@@ -815,8 +819,8 @@ div.frame{
   position: absolute;
   top: 7602px;
   left: 0;
-  width: 1728px;
-  height: 740px;
+  width: 1600px;
+  height: 600px;
 }
 
 .final .container {

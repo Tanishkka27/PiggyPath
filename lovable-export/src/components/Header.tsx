@@ -1,0 +1,54 @@
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import { useState } from "react";
+import piggyPathLogo from "@/assets/piggypath-logo.png";
+
+const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <img src={piggyPathLogo} alt="PiggyPath" className="h-14 w-auto object-contain" />
+
+        <nav className="hidden md:flex items-center gap-8">
+          <a href="#why" className="text-muted-foreground hover:text-foreground transition-colors">Why PiggyPath</a>
+          <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors">Team</a>
+          <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
+        </nav>
+
+        <div className="hidden md:flex items-center gap-4">
+          <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
+            Log In
+          </Button>
+          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
+            Get Started
+          </Button>
+        </div>
+
+        <button 
+          className="md:hidden p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          <Menu className="w-6 h-6 text-foreground" />
+        </button>
+      </div>
+
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-background border-b border-border py-4">
+          <nav className="container mx-auto px-4 flex flex-col gap-4">
+            <a href="#why" className="text-muted-foreground hover:text-foreground transition-colors">Why PiggyPath</a>
+            <a href="#team" className="text-muted-foreground hover:text-foreground transition-colors">Team</a>
+            <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
+            <div className="flex flex-col gap-2 pt-4 border-t border-border">
+              <Button variant="ghost" className="justify-start text-muted-foreground">Log In</Button>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">Get Started</Button>
+            </div>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Header;
