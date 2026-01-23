@@ -65,25 +65,19 @@ const MeetFixy = () => {
 
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Meet Fixy, Your Financial Guide
+              Meet Your Financial Guide
             </h2>
             <div className="space-y-4 text-muted-foreground">
+              <p>You’re Not Doing This Alone 👀 <br />
+              Something’s watching your progress. <br />
+              Not in a creepy way. In a got-your-back way.</p>
               <p>
-                Fixy is your friendly sidekick in this journey to financial
-                freedom. This virtual helper guides the user through 
-                learning to save, budget, invest, track your points, complete missions.
+                As you explore Piggypath, there’s a quiet presence helping you make sense of money—nudging you, challenging you, and keeping things real when finance gets overwhelming.
               </p>
-              <p>
-                By answering your questions, Fixy helps you discover key
-                concepts through interactive exercises.
-              </p>
-              <p>
-                <span className="font-semibold text-foreground">Simplifies the Complex</span> – Explains challenging financial topics.
-              </p>
-              <p>
-                <span className="font-semibold text-foreground">Customizes your path</span> – Tracks your progress and provides personalized 
-                recommendations on decisions.
-              </p>
+              <p>No face reveal. <br /> No name drop. <br /> Not yet.</p>
+              <p>Just know this:
+                it’s built to learn how you think, move at your pace, and keep you on the right financial path.</p>
+              <p>Coming soon.</p>
             </div>
           </div>
         </div>
