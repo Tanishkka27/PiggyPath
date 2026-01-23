@@ -6,7 +6,7 @@ const SolutionSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
             Our Solution
           </h2>
-          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-card border border-border">
+          <div className="bg-card rounded-3xl p-8 md:p-12 shadow-[0_15px_35px_rgba(0,255,127,0.35)] border border-border">
             <p className="text-muted-foreground leading-relaxed text-lg">
               We believe young people don't lack intelligence — they lack engagement. 
               PiggyPath reimagines finance education with hands-on actions, gamified 
