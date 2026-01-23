@@ -1,3 +1,4 @@
+import questionMark from "@/assets/question_mark.png";
 import fixyMascot from "@/assets/fixy-mascot.jpg";
 const MeetFixy = () => {
   return <section className="py-24 bg-background">
@@ -17,16 +18,29 @@ const MeetFixy = () => {
             {/* Mascot container with 3D effects */}
             <div className="relative group">
               {/* Glow effect */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-primary/40 via-secondary/40 to-primary/40 rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-primary/40 via-secondary/40 to-primq
+              ary/40 rounded-full blur-2xl opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
               
               {/* Main mascot image with 3D transform */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden bg-gradient-to-br from-mint-light to-lavender-light p-1 shadow-2xl transform-gpu transition-all duration-500 hover:scale-105" style={{
               boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 60px -15px hsl(142 72% 55% / 0.3)'
             }}>
                 <div className="w-full h-full rounded-full overflow-hidden bg-background flex items-center justify-center">
-                  <img src={fixyMascot} alt="Fixy - Your Financial Guide" className="w-full h-full object-cover animate-float drop-shadow-2xl" style={{
+                  {/* <img src={fixyMascot} alt="Fixy - Your Financial Guide" className="w-full h-full object-cover animate-float drop-shadow-2xl" style={{
                   filter: 'drop-shadow(0 10px 20px rgba(0,0,0,0.15))'
-                }} />
+                }} /> */}
+                <img
+                  src={questionMark}
+                  alt="Question Mark"
+                  className="
+                    w-8/9 h-8/9
+                    object-contain
+                    mx-auto my-auto
+                    animate-question-bounce
+                    drop-shadow-xl
+                  "
+                />
+
                 </div>
               </div>
 
@@ -44,7 +58,7 @@ const MeetFixy = () => {
 
             {/* Speech bubble */}
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card rounded-2xl shadow-card px-6 py-3 border border-border animate-fade-in-up z-10">
-              <span className="text-sm font-medium text-foreground">Hi! I'm Fixy 👋</span>
+              <span className="text-sm font-medium text-foreground">In doubt?</span>
               <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-card border-l border-t border-border rotate-45" />
             </div>
           </div>
