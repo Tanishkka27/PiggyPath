@@ -73,7 +73,7 @@ const MeetTeam = () => {
         </h2>
 
         <p className="text-center text-muted-foreground max-w-xl mx-auto mb-12">
-          Smooth motion. Same rhythm. One continuous wave.
+          A team that works hard behind the scenes to bring you a fun finance experience, building tools that make money management feel effortless.
         </p>
 
         {/* WAVE VIEWPORT */}
