@@ -21,9 +21,7 @@ const Header = () => {
           <Button variant="ghost" className="text-muted-foreground hover:text-foreground">
             Log In
           </Button>
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-6">
-            Get Started
-          </Button>
+          
         </div>
 
         <button 

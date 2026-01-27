@@ -12,7 +12,7 @@ const CTASection = () => {
             variant="secondary" 
             className="bg-background hover:bg-background/90 text-foreground rounded-full px-8 py-6 text-lg"
           >
-            hello@piggypath.io
+            piggypath.org.in
           </Button>
         </div>
       </div>
