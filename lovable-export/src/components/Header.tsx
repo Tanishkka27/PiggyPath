@@ -40,7 +40,6 @@ const Header = () => {
             <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About Us</a>
             <div className="flex flex-col gap-2 pt-4 border-t border-border">
               <Button variant="ghost" className="justify-start text-muted-foreground">Log In</Button>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full">Get Started</Button>
             </div>
           </nav>
         </div>

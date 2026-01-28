@@ -44,7 +44,6 @@ const MeetFixy = () => {
                 </div>
               </div>
 
-              {/* Floating decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary rounded-full animate-bounce opacity-80" style={{
               animationDelay: "0s"
             }} />
@@ -56,9 +55,8 @@ const MeetFixy = () => {
             }} />
             </div>
 
-            {/* Speech bubble */}
             <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-card rounded-2xl shadow-card px-6 py-3 border border-border animate-fade-in-up z-10">
-              <span className="text-sm font-medium text-foreground">In doubt?</span>
+              <span className="text-sm font-medium text-foreground">Can you guess?</span>
               <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-card border-l border-t border-border rotate-45" />
             </div>
           </div>

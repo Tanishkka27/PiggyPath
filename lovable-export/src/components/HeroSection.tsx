@@ -62,7 +62,7 @@ const HeroSection = () => {
             </div>
 
             {/* Middle phone (TOP LAYER) */}
-            <div className="relative z-50 animate-float" style={{ animationDelay: "0.2s" }}>
+            <div className="relative animate-float" style={{ animationDelay: "0.2s" }}>
               <div className="absolute -inset-8 bg-lavender/50 blur-3xl rounded-full -z-10" />
               <div className="isolate w-56 h-[420px] bg-white rounded-3xl border border-border shadow-2xl flex items-center justify-center">
                 <div className="text-center p-4">

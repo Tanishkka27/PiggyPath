@@ -7,15 +7,15 @@ const teamMembers = [
 ];
 
 const MeetTeam = () => {
-  // duplicate list for seamless infinite loop
   const loopMembers = [...teamMembers, ...teamMembers];
 
   return (
     <section
       id="team"
-      className="min-h-screen bg-background flex items-center overflow-hidden py-10"
+      className="bg-background overflow-hidden py-12"
     >
-      {/* ALL STYLES INLINE – NO EXTERNAL FILES */}
+      {/* Reduced vertical spacing, removed min-h-screen & flex */}
+
       <style>{`
         @keyframes waveScroll {
           from {
@@ -35,10 +35,9 @@ const MeetTeam = () => {
         }
       `}</style>
 
-      {/* SVG CLIP PATHS (SMOOTH CURVES) */}
+      {/* SVG clip paths */}
       <svg width="0" height="0">
         <defs>
-          {/* Wave A: top IN, bottom OUT */}
           <clipPath id="waveInOut" clipPathUnits="objectBoundingBox">
             <path
               d="
@@ -47,12 +46,10 @@ const MeetTeam = () => {
                 L1,1
                 C0.75,0.82 0.25,0.82 0,1
                 Z
-                
               "
             />
           </clipPath>
 
-          {/* Wave B: top OUT, bottom IN */}
           <clipPath id="waveOutIn" clipPathUnits="objectBoundingBox">
             <path
               d="
@@ -68,15 +65,18 @@ const MeetTeam = () => {
       </svg>
 
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-5xl font-bold text-center mb-4">
+        {/* Heading */}
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-3">
           Meet Our Team
         </h2>
 
-        <p className="text-center text-muted-foreground max-w-xl mx-auto mb-12">
-          A team that works hard behind the scenes to bring you a fun finance experience, building tools that make money management feel effortless.
+        {/* Description */}
+        <p className="text-center text-muted-foreground max-w-xl mx-auto mb-8">
+          A team that works hard behind the scenes to bring you a fun finance
+          experience, building tools that make money management feel effortless.
         </p>
 
-        {/* WAVE VIEWPORT */}
+        {/* Scrolling wave */}
         <div className="overflow-hidden">
           <div className="wave-track">
             {loopMembers.map((member, index) => {
@@ -105,7 +105,7 @@ const MeetTeam = () => {
                     />
                   </div>
 
-                  <h3 className="mt-4 font-semibold text-foreground">
+                  <h3 className="mt-3 font-semibold text-foreground">
                     {member.name}
                   </h3>
                   <p className="text-sm text-muted-foreground">

@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin, Youtube, Mail } from "lucide-react";
+import {Twitter, Instagram, Linkedin,Mail } from "lucide-react";
 import piggyPathLogo from "@/assets/piggypath-logo.png";
 
 const Footer = () => {
@@ -45,15 +45,15 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4 text-lg">GET SOCIAL :</h4>
-            <div className="grid grid-cols-3 gap-3 max-w-[180px]">
-              {[Facebook, Twitter, Mail, Linkedin, Instagram, Youtube].map((Icon, index) => (
+            <h4 className="font-semibold mb-4 text-">GET SOCIAL :</h4>
+            <div className="grid grid-cols-2 gap-2 max-w-[110px]">
+              {[Twitter, Mail, Linkedin, Instagram].map((Icon, index) => (
                 <a
                   key={index}
                   href="#"
-                  className="w-10 h-10 bg-background/10 hover:bg-primary hover:text-primary-foreground rounded-lg flex items-center justify-center transition-colors"
+                  className="w-9 h-9 bg-background/10 hover:bg-primary hover:text-primary-foreground rounded-lg flex items-center justify-center transition-colors"
                 >
-                  <Icon className="w-5 h-5" />
+                  <Icon className="w-5 h-4" />
                 </a>
               ))}
             </div>
