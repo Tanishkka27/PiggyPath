@@ -33,7 +33,7 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-up"
             style={{ animationDelay: "0.3s" }}
           >
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg gap-2">
+            {/* <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg gap-2">
               Join Waitlist <ArrowRight className="w-5 h-5" />
             </Button>
             <Button
@@ -41,7 +41,7 @@ const HeroSection = () => {
               className="rounded-full px-8 py-6 text-lg gap-2 border-border hover:bg-muted"
             >
               <Play className="w-5 h-5" /> Watch Demo
-            </Button>
+            </Button> */}
           </div>
         </div>
 
